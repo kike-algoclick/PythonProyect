@@ -34,9 +34,7 @@ while(True):
 
     if answer == "1":
         print("La partida ha empezado \n")
-        createPairs(
-            checkNumbers()
-        )
+        createPairs()
     elif answer == "2":
         print("Tu puntaje máximo es de: ",highestScore)
     elif answer == "3":
