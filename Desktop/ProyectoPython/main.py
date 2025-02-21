@@ -50,7 +50,6 @@ def checkNumbers():
                 print("has encontrado una pareja! \n")
                 print("puntaje" , score ,"puntos \n")
                 print("has ganado 10 puntos")
-
     
     
         #Se remueven las parejas encontradas
@@ -65,22 +64,8 @@ def checkNumbers():
                 print(num1)
                 print(num2)
                 print("Los numeros no coinciden vuelve a intentar")
-               
-            
-            
         except ValueError:
-                ("Debes escoger números")
-                
-        number1 = str(num1)
-        number2 = str(num2)
-
-        if number1 == "salir":
-            print("seguro que quieres salir? Escribelo otra vez para confimar")
-        if number2 == "salir":
-                print("La partida he terminado")
-                print("tu puntaje es:", score)
-                break
-        
+            print("Debes digitar números")
         
     ##puntuación maxima
     if score > highestScore:
