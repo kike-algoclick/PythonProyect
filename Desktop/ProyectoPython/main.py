@@ -31,6 +31,9 @@ def checkNumbers():
         try:
             a = int(input("Elige un número entre 0 y {}: \n \n".format(len(numbers) - 1)))
             b = int(input("Elige otro número entre 0 y {}: \n \n".format(len(numbers) - 1)))
+            c = input("Si quieres salir escribe 'salir': ")
+            c = c.lower()
+        
 
             if a < 0 or b < 0 or a >= len(numbers) or b >= len(numbers):
                 print("Índices fuera de rango. Intenta de nuevo.")
@@ -38,6 +41,12 @@ def checkNumbers():
             if a == b:
                 print("Debes elegir 2 posiciones diferentes")
                 continue
+            if c == 'salir':
+                score += score
+                if score > highestScore:
+                     highestScore = score
+                print("Has abandonado la partida")
+                break
 
 
             num1 = numbers[a]
